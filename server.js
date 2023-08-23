@@ -12,6 +12,8 @@ app.get("/", (req, res) => {
     res.render('index', { weather: null, error: null });
 })
 
+//app.post("/")
+
 app.get('/weather', async (req, res) => {
     const city = req.query.city;
     const apiKey= process.env.apiKey
